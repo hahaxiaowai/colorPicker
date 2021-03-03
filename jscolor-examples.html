@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jscolor Examples</title>
+    <style>
+      body {
+        padding: 30px 60px 30px;
+      }
+      h2,
+      footer {
+        margin: 20px 0 20px;
+      }
+      footer h2 {
+        margin: 30px 0 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color</h1>
+
+    <script src="jscolor.js"></script>
+
+    <script>
+      // Here we can adjust defaults for all color pickers on page:
+      jscolor.presets.default = {
+        palette: [
+          "#000000",
+          "#7d7d7d",
+          "#870014",
+          "#ec1c23",
+          "#ff7e26",
+          "#fef100",
+          "#22b14b",
+          "#00a1e7",
+          "#3f47cc",
+          "#a349a4",
+          "#ffffff",
+          "#c3c3c3",
+          "#b87957",
+          "#feaec9",
+          "#ffc80d",
+          "#eee3af",
+          "#b5e61d",
+          "#99d9ea",
+          "#7092be",
+          "#c8bfe7",
+        ],
+        position: "right",
+        width: 181,
+        height: 121,
+      };
+    </script>
+
+    <h2>HEX</h2>
+
+    Color:
+    <input
+      value="9318FF"
+      data-jscolor="{}"
+    />
+
+    <h2>HEX with Alpha</h2>
+
+    Color:
+    <input
+      value="9318FFFF"
+      data-jscolor="{}"
+    />
+
+    <h2>RGB</h2>
+
+    Color:
+    <input
+      value="rgb(147,24,255)"
+      data-jscolor="{}"
+    />
+    <h2>RGBA</h2>
+
+    Color:
+    <input
+      value="rgba(147,24,255,1.0)"
+      data-jscolor="{}"
+    />
+  </body>
+</html>
